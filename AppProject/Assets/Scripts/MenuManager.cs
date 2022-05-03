@@ -34,6 +34,9 @@ public class MenuManager : MonoBehaviour
     private GameObject MenuOverlayObject = null;
     [SerializeField]
     private GameObject MenuSideBar = null;
+    [SerializeField]
+    private GameObject BannerBackgroundObject = null;
+
 
     [Header("Sub Menus")]
     
@@ -101,6 +104,7 @@ public class MenuManager : MonoBehaviour
         Menus.Add(MenuLecturersObject);
         Menus.Add(MenuOverlayObject);
         Menus.Add(MenuSideBar);    
+        Menus.Add(BannerBackgroundObject);    
 
         UpdateMenu(MenuStartObject, true);
 
@@ -158,6 +162,13 @@ public class MenuManager : MonoBehaviour
         {
             MenuOverlayObject.SetActive(true);
             MenuSideBar.SetActive(true);
+            BannerBackgroundObject.SetActive(true);
+        }
+
+
+        if (a_currentMenu == MenuHomeObject)
+        {
+            MenuOverlayObject.SetActive(false);
         }
     }
 
@@ -285,14 +296,14 @@ public class MenuManager : MonoBehaviour
 
 
     /// <summary>
-    /// update sub menu of programming to overview
+    /// update sub menu of design to overview
     /// </summary>
     public void SubMenuDesignOverview()
     {
         UpdateMenu(MenuDesignOverview, false);
     }
     /// <summary>
-    /// update sub menu of programming to EntryRequire
+    /// update sub menu of design to EntryRequire
     /// </summary>
     public void SubMenuDesignEntryRequire()
     {
@@ -300,7 +311,7 @@ public class MenuManager : MonoBehaviour
     }
 
     /// <summary>
-    /// update sub menu of programming to Moduels
+    /// update sub menu of design to Moduels
     /// </summary>
     public void SubMenuDesignModules()
     {
@@ -308,7 +319,7 @@ public class MenuManager : MonoBehaviour
     }
 
     /// <summary>
-    /// update sub menu of programming to Fees
+    /// update sub menu of design to Fees
     /// </summary>
     public void SubMenuDesignFees()
     {
@@ -316,11 +327,95 @@ public class MenuManager : MonoBehaviour
     }
 
     /// <summary>
-    /// update sub menu of programming to Careers
+    /// update sub menu of design to Careers
     /// </summary>
     public void SubMenuDesignCareers()
     {
         UpdateMenu(MenuDesignCareers, false);
     }
+
+
+
+    /// <summary>
+    /// update sub menu of art to overview
+    /// </summary>
+    public void SubMenuArtOverview()
+    {
+        UpdateMenu(MenuArtOverview, false);
+    }
+    /// <summary>
+    /// update sub menu of art to EntryRequire
+    /// </summary>
+    public void SubMenuArtEntryRequire()
+    {
+        UpdateMenu(MenuArtEntryRequire, false);
+    }
+
+    /// <summary>
+    /// update sub menu of art to Moduels
+    /// </summary>
+    public void SubMenuArtModules()
+    {
+        UpdateMenu(MenuArtModules, false);
+    }
+
+    /// <summary>
+    /// update sub menu of art to Fees
+    /// </summary>
+    public void SubMenuArtFees()
+    {
+        UpdateMenu(MenuArtFees, false);
+    }
+
+    /// <summary>
+    /// update sub menu of art to Careers
+    /// </summary>
+    public void SubMenuArtCareers()
+    {
+        UpdateMenu(MenuArtCareers, false);
+    }
+
+
+
+    /// <summary>
+    /// update sub menu of Masters to overview
+    /// </summary>
+    public void SubMenuMastersOverview()
+    {
+        UpdateMenu(MenuMastersOverview, false);
+    }
+    /// <summary>
+    /// update sub menu of art to EntryRequire
+    /// </summary>
+    public void SubMenuMastersEntryRequire()
+    {
+        UpdateMenu(MenuMastersEntryRequire, false);
+    }
+
+    /// <summary>
+    /// update sub menu of Masters to Moduels
+    /// </summary>
+    public void SubMenuMastersModules()
+    {
+        UpdateMenu(MenuMastersModules, false);
+    }
+
+    /// <summary>
+    /// update sub menu of Masters to Fees
+    /// </summary>
+    public void SubMenuMastersFees()
+    {
+        UpdateMenu(MenuMastersFees, false);
+    }
+
+    /// <summary>
+    /// update sub menu of art to Careers
+    /// </summary>
+    public void SubMenuMastersCareers()
+    {
+        UpdateMenu(MenuMastersCareers, false);
+    }
+
+
 
 }
