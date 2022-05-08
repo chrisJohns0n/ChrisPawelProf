@@ -7209,7 +7209,7 @@ GameObject:
   - component: {fileID: 640851846}
   - component: {fileID: 640851845}
   m_Layer: 0
-  m_Name: Hitbox
+  m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9037,7 +9037,7 @@ GameObject:
   - component: {fileID: 779479572}
   - component: {fileID: 779479571}
   m_Layer: 0
-  m_Name: Handle
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13348,7 +13348,7 @@ MonoBehaviour:
   transitionSpeed: 10
   thresholdDragSpeed: 0
   thresholdDraggedFraction: 0.25
-  handle: {fileID: 779479569}
+  handle: {fileID: 640851843}
   isHandleDraggable: 1
   isMenuDraggable: 1
   handleToggleStateOnPressed: 0
@@ -16392,6 +16392,7 @@ MonoBehaviour:
   MenuMastersModules: {fileID: 2026246445}
   MenuMastersFees: {fileID: 909440730}
   MenuMastersCareers: {fileID: 580690658}
+  LecturersSideBarButton: {fileID: 1333242461}
 --- !u!114 &1515162698
 MonoBehaviour:
   m_ObjectHideFlags: 0

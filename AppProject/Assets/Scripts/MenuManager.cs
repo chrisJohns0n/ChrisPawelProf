@@ -84,6 +84,10 @@ public class MenuManager : MonoBehaviour
     [SerializeField]       
     private GameObject MenuMastersCareers = null;
 
+    [Header("Buttons")]
+    [SerializeField]
+    private GameObject LecturersSideBarButton = null;
+
     //empty list for menus
     private List<GameObject> Menus = new List<GameObject>();
 
@@ -170,6 +174,15 @@ public class MenuManager : MonoBehaviour
         {
             MenuOverlayObject.SetActive(false);
             MenuSideBar.SetActive(false);
+        }
+
+        if (a_currentMenu == MenuLecturersObject)
+        {
+            LecturersSideBarButton.SetActive(false);
+        }
+        else
+        {
+            LecturersSideBarButton.SetActive(true);
         }
     }
 

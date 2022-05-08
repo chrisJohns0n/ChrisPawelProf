@@ -272,7 +272,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 54af3d5a807a56a441a1529f1a30af2d
+      Hash: 0b019d7326fcfca746f6e1d6cf569beb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuManager
