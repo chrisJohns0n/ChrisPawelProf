@@ -89,7 +89,10 @@ public class MenuManager : MonoBehaviour
 
     private List<GameObject> SubMenus = new List<GameObject>();
 
-
+    private void Awake()
+    {
+        MenuSideBar.SetActive(false);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -106,7 +109,7 @@ public class MenuManager : MonoBehaviour
         Menus.Add(MenuSideBar);    
         Menus.Add(BannerBackgroundObject);    
 
-        UpdateMenu(MenuStartObject, true);
+        UpdateMenu(MenuHomeObject, true);
 
         SubMenus.Add(MenuProgrammingOverview);
         SubMenus.Add(MenuProgrammingEntryRequire);
@@ -158,17 +161,15 @@ public class MenuManager : MonoBehaviour
 
         a_currentMenu.SetActive(true);
 
-        if (a_currentMenu != MenuStartObject)
-        {
-            MenuOverlayObject.SetActive(true);
-            MenuSideBar.SetActive(true);
-            BannerBackgroundObject.SetActive(true);
-        }
+        MenuOverlayObject.SetActive(true);
+        MenuSideBar.SetActive(true);
+        BannerBackgroundObject.SetActive(true);
 
 
         if (a_currentMenu == MenuHomeObject)
         {
             MenuOverlayObject.SetActive(false);
+            MenuSideBar.SetActive(false);
         }
     }
 
@@ -219,6 +220,7 @@ public class MenuManager : MonoBehaviour
     public void MenuArtButton()
     {
         UpdateMenu(MenuArtObject, true);
+        SubMenuArtOverview();
     }
 
     /// <summary>
@@ -235,6 +237,7 @@ public class MenuManager : MonoBehaviour
     public void MenuDesignButton()
     {
         UpdateMenu(MenuDesignObject, true);
+        SubMenuDesignOverview();
     }
     /// <summary>
     /// update the menu to the masters menu
@@ -242,6 +245,7 @@ public class MenuManager : MonoBehaviour
     public void MenuMastersButton()
     {
         UpdateMenu(MenuMastersObject, true);
+        SubMenuMastersOverview();
     }
     /// <summary>
     /// update the menu to the lecturers menu
