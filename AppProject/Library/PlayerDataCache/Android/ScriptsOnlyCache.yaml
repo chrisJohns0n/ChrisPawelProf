@@ -42,25 +42,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1654}
+      Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 2590}
+      Script: {instanceID: 2452}
     - Class: 114
-      Script: {instanceID: 2788}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 2894}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 3048}
+      Script: {instanceID: 2910}
     - Class: 114
-      Script: {instanceID: 4594}
+      Script: {instanceID: 4456}
     - Class: 114
-      Script: {instanceID: 5130}
+      Script: {instanceID: 4992}
     - Class: 114
-      Script: {instanceID: 5418}
+      Script: {instanceID: 5280}
     - Class: 114
-      Script: {instanceID: 5838}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 5866}
+      Script: {instanceID: 5730}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -873,4 +873,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: E:/UNI/Chris-Pawel-Professional-Awareness/build/UniApp.apk
+  playerPath: E:/UNI/Chris-Pawel-Professional-Awareness/build/UniAppFin.apk
